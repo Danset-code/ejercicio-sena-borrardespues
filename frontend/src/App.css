@@ -1,0 +1,109 @@
+/**
+ * Estilos globales de la aplicación TaskFlow.
+ * Define la estructura general, tipografía y colores base.
+ * Se usa la fuente Inter de Google Fonts.
+ */
+
+/* --- Reset y estilos base --- */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Inter', -apple-system, BlinkMacSystemFont, sans-serif;
+  background-color: #f0f2f5;
+  color: #1a1a2e;
+  line-height: 1.6;
+  min-height: 100vh;
+}
+
+/* --- Contenedor principal --- */
+.app-container {
+  max-width: 900px;
+  margin: 0 auto;
+  padding: 20px;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+/* --- Encabezado --- */
+.app-header {
+  text-align: center;
+  padding: 30px 20px;
+  margin-bottom: 24px;
+  background: linear-gradient(135deg, #2563eb 0%, #1d4ed8 100%);
+  border-radius: 16px;
+  color: white;
+  box-shadow: 0 4px 20px rgba(37, 99, 235, 0.3);
+}
+
+.app-header h1 {
+  font-size: 2.2rem;
+  font-weight: 700;
+  letter-spacing: -0.5px;
+  margin-bottom: 4px;
+}
+
+.app-header p {
+  font-size: 0.95rem;
+  opacity: 0.85;
+  font-weight: 300;
+}
+
+/* --- Secciones --- */
+.app-section {
+  margin-bottom: 20px;
+}
+
+/* --- Mensaje de error --- */
+.mensaje-error {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #fef2f2;
+  border: 1px solid #fecaca;
+  color: #dc2626;
+  padding: 12px 16px;
+  border-radius: 10px;
+  margin-bottom: 16px;
+  font-size: 0.9rem;
+}
+
+.mensaje-error button {
+  background: none;
+  border: none;
+  color: #dc2626;
+  font-size: 1.1rem;
+  cursor: pointer;
+  padding: 0 4px;
+}
+
+/* --- Indicador de carga --- */
+.cargando {
+  text-align: center;
+  padding: 40px;
+  color: #6b7280;
+  font-size: 1rem;
+}
+
+/* --- Pie de página --- */
+.app-footer {
+  margin-top: auto;
+  text-align: center;
+  padding: 20px;
+  color: #9ca3af;
+  font-size: 0.8rem;
+}
+
+/* --- Responsive --- */
+@media (max-width: 640px) {
+  .app-container {
+    padding: 12px;
+  }
+  .app-header h1 {
+    font-size: 1.6rem;
+  }
+}

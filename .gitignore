@@ -1,0 +1,51 @@
+# === Java / Spring Boot / Maven ===
+backend/target/
+backend/*.jar
+backend/*.war
+backend/*.log
+backend/.mvn/wrapper/maven-wrapper.jar
+
+# === Node / React ===
+frontend/node_modules/
+frontend/build/
+frontend/.env
+frontend/.env.local
+
+# === IDEs ===
+# IntelliJ IDEA
+.idea/
+*.iml
+*.iws
+*.ipr
+
+# VS Code
+.vscode/
+
+# Eclipse
+.classpath
+.project
+.settings/
+
+# NetBeans
+nbproject/
+
+# === Sistema Operativo ===
+# macOS
+.DS_Store
+.AppleDouble
+.LSOverride
+
+# Windows
+Thumbs.db
+Thumbs.db:encryptable
+ehthumbs.db
+Desktop.ini
+
+# Linux
+*~
+
+# === Misceláneos ===
+*.log
+*.tmp
+*.bak
+EOF

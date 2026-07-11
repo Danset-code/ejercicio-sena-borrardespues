@@ -1,0 +1,345 @@
+/**
+ * Estilos de los componentes reutilizables de TaskFlow.
+ * Incluye tarjetas, formularios, badges, botones y lista de tareas.
+ * Nomenclatura BEM simplificada para mantener consistencia.
+ */
+
+/* --- Tarjeta de formulario --- */
+.formulario-card {
+  background: white;
+  border-radius: 14px;
+  padding: 24px;
+  box-shadow: 0 1px 8px rgba(0, 0, 0, 0.06);
+  border: 1px solid #e5e7eb;
+}
+
+.formulario-titulo {
+  font-size: 1.2rem;
+  font-weight: 600;
+  color: #1a1a2e;
+  margin-bottom: 18px;
+}
+
+/* --- Grupos de formulario --- */
+.form-grupo {
+  margin-bottom: 14px;
+}
+
+.form-label {
+  display: block;
+  font-size: 0.85rem;
+  font-weight: 500;
+  color: #374151;
+  margin-bottom: 5px;
+}
+
+.form-input,
+.form-textarea,
+.form-select {
+  width: 100%;
+  padding: 10px 14px;
+  border: 1.5px solid #d1d5db;
+  border-radius: 9px;
+  font-size: 0.92rem;
+  font-family: inherit;
+  color: #1a1a2e;
+  background-color: #fafafa;
+  transition: border-color 0.2s, box-shadow 0.2s;
+  outline: none;
+}
+
+.form-input:focus,
+.form-textarea:focus,
+.form-select:focus {
+  border-color: #2563eb;
+  box-shadow: 0 0 0 3px rgba(37, 99, 235, 0.12);
+  background-color: white;
+}
+
+.form-textarea {
+  resize: vertical;
+  min-height: 70px;
+}
+
+.form-error {
+  color: #dc2626;
+  font-size: 0.82rem;
+  margin-bottom: 8px;
+}
+
+/* --- Botones --- */
+.btn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 6px;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 9px;
+  font-size: 0.9rem;
+  font-weight: 500;
+  font-family: inherit;
+  cursor: pointer;
+  transition: all 0.2s;
+  text-decoration: none;
+}
+
+.btn-sm {
+  padding: 6px 12px;
+  font-size: 0.78rem;
+  border-radius: 7px;
+}
+
+.btn-primary {
+  background-color: #2563eb;
+  color: white;
+  width: 100%;
+}
+
+.btn-primary:hover {
+  background-color: #1d4ed8;
+  transform: translateY(-1px);
+  box-shadow: 0 2px 8px rgba(37, 99, 235, 0.3);
+}
+
+.btn-success {
+  background-color: #059669;
+  color: white;
+}
+
+.btn-success:hover {
+  background-color: #047857;
+}
+
+.btn-warning {
+  background-color: #d97706;
+  color: white;
+}
+
+.btn-warning:hover {
+  background-color: #b45309;
+}
+
+.btn-danger {
+  background-color: #dc2626;
+  color: white;
+}
+
+.btn-danger:hover {
+  background-color: #b91c1c;
+}
+
+.btn-info {
+  background-color: #0891b2;
+  color: white;
+}
+
+.btn-info:hover {
+  background-color: #0e7490;
+}
+
+.btn-secondary {
+  background-color: #6b7280;
+  color: white;
+}
+
+.btn-secondary:hover {
+  background-color: #4b5563;
+}
+
+/* --- Tarjeta de filtros --- */
+.filtros-card {
+  background: white;
+  border-radius: 14px;
+  padding: 18px 24px;
+  box-shadow: 0 1px 8px rgba(0, 0, 0, 0.06);
+  border: 1px solid #e5e7eb;
+  display: flex;
+  gap: 20px;
+  flex-wrap: wrap;
+  align-items: flex-end;
+}
+
+.filtro-grupo {
+  flex: 1;
+  min-width: 200px;
+}
+
+.filtro-label {
+  display: block;
+  font-size: 0.82rem;
+  font-weight: 500;
+  color: #6b7280;
+  margin-bottom: 5px;
+}
+
+/* --- Lista de tareas --- */
+.lista-titulo {
+  font-size: 1.1rem;
+  font-weight: 600;
+  color: #374151;
+  margin-bottom: 14px;
+}
+
+.lista-items {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.lista-vacia {
+  text-align: center;
+  padding: 50px 20px;
+  background: white;
+  border-radius: 14px;
+  border: 2px dashed #d1d5db;
+  color: #9ca3af;
+}
+
+.lista-vacia-icono {
+  font-size: 2.5rem;
+  display: block;
+  margin-bottom: 10px;
+}
+
+.lista-vacia-subtexto {
+  font-size: 0.82rem;
+  margin-top: 4px;
+}
+
+/* --- Tarjeta de tarea individual --- */
+.tarea-card {
+  background: white;
+  border-radius: 12px;
+  padding: 18px 20px;
+  box-shadow: 0 1px 6px rgba(0, 0, 0, 0.05);
+  border: 1px solid #e5e7eb;
+  transition: box-shadow 0.2s, transform 0.15s;
+}
+
+.tarea-card:hover {
+  box-shadow: 0 3px 12px rgba(0, 0, 0, 0.08);
+  transform: translateY(-1px);
+}
+
+.tarea-editando {
+  border-color: #2563eb;
+  border-width: 2px;
+}
+
+.tarea-edit-campos {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  margin-bottom: 14px;
+}
+
+/* --- Cabecera de tarea (badges) --- */
+.tarea-cabecera {
+  display: flex;
+  gap: 8px;
+  margin-bottom: 10px;
+  flex-wrap: wrap;
+}
+
+/* --- Badges de estado --- */
+.badge-estado,
+.badge-prioridad {
+  display: inline-block;
+  padding: 3px 10px;
+  border-radius: 20px;
+  font-size: 0.72rem;
+  font-weight: 600;
+  letter-spacing: 0.3px;
+}
+
+.estado-pendiente {
+  background-color: #fef3c7;
+  color: #92400e;
+}
+
+.estado-en-progreso {
+  background-color: #dbeafe;
+  color: #1e40af;
+}
+
+.estado-completada {
+  background-color: #d1fae5;
+  color: #065f46;
+}
+
+.estado-cancelada {
+  background-color: #fee2e2;
+  color: #991b1b;
+}
+
+.prioridad-alta {
+  background-color: #fee2e2;
+  color: #991b1b;
+}
+
+.prioridad-media {
+  background-color: #fef3c7;
+  color: #92400e;
+}
+
+.prioridad-baja {
+  background-color: #d1fae5;
+  color: #065f46;
+}
+
+/* --- Contenido de tarea --- */
+.tarea-titulo {
+  font-size: 1rem;
+  font-weight: 600;
+  color: #1a1a2e;
+  margin-bottom: 4px;
+}
+
+.tarea-descripcion {
+  font-size: 0.87rem;
+  color: #6b7280;
+  line-height: 1.5;
+}
+
+/* --- Pie de tarea --- */
+.tarea-pie {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 12px;
+  padding-top: 12px;
+  border-top: 1px solid #f3f4f6;
+  flex-wrap: wrap;
+  gap: 8px;
+}
+
+.tarea-fecha {
+  font-size: 0.75rem;
+  color: #9ca3af;
+}
+
+.tarea-acciones {
+  display: flex;
+  gap: 6px;
+  flex-wrap: wrap;
+}
+
+/* --- Responsive --- */
+@media (max-width: 640px) {
+  .filtros-card {
+    flex-direction: column;
+    gap: 12px;
+  }
+  .tarea-pie {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+  .tarea-acciones {
+    width: 100%;
+  }
+  .tarea-acciones .btn-sm {
+    flex: 1;
+    text-align: center;
+  }
+}
