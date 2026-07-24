@@ -1,0 +1,2 @@
+import { api } from './api';
+export const alertaService={getAll:()=>api.get('/alertas'),getById:id=>api.get('/alertas/'+id),create:data=>api.post('/alertas',data),update:(id,data)=>api.put('/alertas/'+id,data),remove:id=>api.delete('/alertas/'+id)};

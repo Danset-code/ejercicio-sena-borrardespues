@@ -1,0 +1,2 @@
+import { api } from './api';
+export const actuadorService={getAll:()=>api.get('/actuadores'),getById:id=>api.get('/actuadores/'+id),create:data=>api.post('/actuadores',data),update:(id,data)=>api.put('/actuadores/'+id,data),remove:id=>api.delete('/actuadores/'+id)};
